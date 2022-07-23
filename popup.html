@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="popup.css">
+
+</head>
+<body>
+  <h3>Address Checker</h3>
+  <p>Change for which risk scores you want to be notified</p>
+  <form id="optionsForm">
+
+    <label for="minRiskScore" class="bold">
+      <input type="number" min="0" max="10" name="minRiskScore" id="minRiskScore">
+      <br>
+      Minimal Risk Score
+    </label>
+
+    <p>A risk score of zero are white labeled addresses, a score of 10 are verified scam
+      addresses</p>
+
+    <label for="key" class="bold">
+      <input type="text" name="key" id="key">
+      Api-Key
+    </label>
+    <p>You can add an Api-Key to increase the amount of requests you can make</p>
+  </form>
+
+  <script src="popup.js"></script>
+</body>
+</html>
