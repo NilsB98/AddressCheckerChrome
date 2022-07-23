@@ -10,10 +10,6 @@ chrome.storage.sync.get('options', (data) => {
 });
 
 // Immediately persist options changes
-optionsForm.debug.addEventListener('change', (event) => {
-    chrome.storage.sync.set({options});
-});
-
 optionsForm.minRiskScore.addEventListener('change', (event) => {
     options.minRiskScore = event.target.value;
     chrome.storage.sync.set({options})

@@ -1,6 +1,7 @@
 chrome.runtime.onInstalled.addListener(() => {
     let options = {'minRiskScore': 2}
     chrome.storage.sync.set({options})
+    console.log('set min risk score')
 });
 
 chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
